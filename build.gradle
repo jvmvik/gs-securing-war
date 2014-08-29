@@ -30,11 +30,17 @@ repositories {
 }
 
 dependencies {
-    //compile("org.springframework.boot:spring-boot-starter-web:1.1.6.BUILD-SNAPSHOT")
+
     compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+
     compile("org.springframework.boot:spring-boot-starter-security:1.1.6.BUILD-SNAPSHOT")
+    compile("org.springframework.security:spring-security-ldap:3.2.5.RELEASE")
+    compile("org.apache.directory.server:apacheds-core:1.5.5")
+    compile("org.apache.directory.server:apacheds-protocol-ldap:1.5.5")
+
+
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile("junit:junit")
